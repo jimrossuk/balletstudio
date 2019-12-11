@@ -1,0 +1,68 @@
+.main-1 {
+  display: flex;
+  background: white;
+  padding: 0 100px 0px 100px;
+  position: relative;
+  width: 100%;
+  height: 575px;
+}
+
+.main-1 h1 {
+  color: #ed4290;
+}
+
+.main-text {
+  justify-content: flex-start;
+  padding: 0 60px 0 20px;
+}
+
+.main-pix {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 30%;
+  padding: 30px 30px 0px 10px;
+}
+
+.main-pix img {
+  width: 40%;
+  padding: 80px;
+}
+
+.tagline {
+  padding: 40px;
+  font-size: 2.1em;
+}
+
+.discover {
+  padding: 0px;
+}
+
+.tagline,
+.discover {
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.text-photo {
+  display: flex;
+  padding: 0px 10px;
+  margin: 0 0 10px 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 175px;
+  height: 100px;
+  justify-content: left;
+  align-items: center;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+a,
+a:visited {
+  color: white;
+  //background: blue;
+}

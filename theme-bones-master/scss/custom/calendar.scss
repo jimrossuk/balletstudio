@@ -1,0 +1,102 @@
+.the_calender {
+  padding: 100px;
+  background: white;
+  //position: relative;
+}
+
+.calender-panel-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cal-1 {
+  color: purple;
+}
+
+.date-time {
+  color: purple;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.month-calander,
+.date-time {
+  display: inline;
+}
+
+.month-calander {
+  color: black;
+}
+
+.date-subject {
+  display: inline;
+}
+
+.date-time-end {
+  color: purple;
+  display: inline;
+  font-size: 0.6rem;
+  padding: 10px 0 0 15px;
+}
+
+.calender-content {
+  font-size: 0.8rem;
+  padding: 30px 0 0 14px;
+  margin: 0;
+}
+
+.date_calender {
+  background: white;
+  width: 100%;
+}
+//This is the grey Horizontal line and purple dot on Calender
+.datewrapper {
+  border-bottom: 1px grey solid;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  &::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: purple;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -7px;
+  }
+}
+//lining up the grey Verticle line and dots in Calander
+.cal-mark-up {
+  border-left: 1px grey solid;
+  margin: 0;
+  padding: 5px 0 0 0px;
+  position: relative;
+  right: -7px;
+  &::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: grey;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    bottom: 30px;
+    margin: 0 0 0 -4px;
+  }
+}
+
+.calendar-link-page p {
+  color: grey;
+}
+
+// .cal-mark-up::before {
+//     content: "";
+//     width: 10px;
+//     height: 10px;
+//     background: purple;
+//     border-radius: 50%;
+//     display: inline-block;
+//   }
+//rerange this with some drawing techniques and It will go to the right bit..

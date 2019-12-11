@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  padding: 70px;
+  background: #4d4e4e;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  align-content: space-evenly;
+  .menu-item {
+    float: none;
+    list-style-image: url(/wp-content/themes/theme-bones-master/theme-bones-master/images/arrow2.png);
+  }
+}
+
+.middle-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.map-google {
+  border: purple 5px solid;
+}
+
+.footer-columns {
+  padding: 10px;
+  flex: 1;
+}
+
+.footer-links {
+  padding: 0;
+}
+
+.footer-contact h4 {
+  padding: 50px 0 0 0;
+}
+
+.padding {
+  padding-left: 90px;
+}
