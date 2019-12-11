@@ -2727,7 +2727,7 @@ a.footer-map-directions {
 }
 .footer .menu-item {
   float: none;
-  list-style-image: url(/wp-content/themes/theme-bones-master/theme-bones-master/images/arrow2.png);
+  list-style-image: url(/wp-content/themes/theme-bones-master/library/images/arrow2.png);
 }
 
 .middle-footer {
@@ -2755,6 +2755,10 @@ a.footer-map-directions {
 
 .padding {
   padding-left: 90px;
+}
+
+.carousel-indicators li {
+  background: green;
 }
 
 img {

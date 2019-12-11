@@ -10,13 +10,13 @@
                 </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <p class="d-block w-100"> <?php echo do_shortcode('[custom-twitter-feeds num=2]') ?>  </p>
+                    <p class="d-block w-100"> <?php fakeTweet() ;?>  </p>
                 </div>
                 <div class="carousel-item">
-                    <p class="d-block w-100"> <?php  echo do_shortcode('[custom-twitter-feeds]') ?> </p>
+                <p class="d-block w-100"> <?php fakeTweet() ;?>  </p>
                 </div>
                 <div class="carousel-item">
-                    <p class="d-block w-100">  <?php  echo do_shortcode('[custom-twitter-feeds]') ?>  </p>
+                <p class="d-block w-100"> <?php fakeTweet() ;?>  </p>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -36,7 +36,7 @@
             // fakeTweet();
         ?> 
     </div>
-    
+
 
     <a class="twitter-button" href ="https://twitter.com/JimRossPhoto">Follow Us</a>
 </section>

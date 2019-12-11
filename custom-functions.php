@@ -53,14 +53,6 @@ function fakeTweet(){ ?>
 
 }
 
-// function differentTwitterTweets(){
-	
-// 	foreach custom-twitter-feeds num=5
-// 	return [];
-	
-
-
-// }
 
 
 
