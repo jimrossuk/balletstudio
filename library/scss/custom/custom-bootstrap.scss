@@ -1,3 +1,15 @@
 .carousel-indicators li {
-  background: green;
+  //background: green;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+  background: hotpink;
+  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
+}
+
+.carousel-control-prev-icon {
+  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
 }
