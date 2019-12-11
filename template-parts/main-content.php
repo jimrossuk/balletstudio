@@ -37,9 +37,7 @@
                 style= "background-image: url('<?php echo get_field('welcome_photo3');?>'  )" 
             >
                 <?php echo get_field('text_on_photo3');?>
-            </a>
-
-
+</a>
 
 
         </div>  <!-- End of "main-pix" div -->

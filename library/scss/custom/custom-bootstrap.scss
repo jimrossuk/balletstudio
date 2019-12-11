@@ -1,37 +1,101 @@
 .carousel-indicators li {
-  //background: green;
+  //styled the circles in carousel
   height: 5px;
   width: 5px;
   border-radius: 50%;
 }
 
+//indicator possitioning
+
+//arrows for direction and possitioning
 .carousel-control-next-icon {
-  background: red;
   background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
   position: absolute;
   bottom: 0;
 }
-
+//arrows for direction and possitioning
 .carousel-control-prev-icon {
-  background: white;
   background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
   position: absolute;
   bottom: 0;
 }
 
-.carousel-control-next {
-  background: forestgreen;
-  position: absolute;
-  left: 10;
-  bottom: -35px;
-  right: 50px;
-  display: flex;
+//arrow section for direction and possitioning for the Twitter section
+.twitter-section {
+  .carousel-control-next {
+    position: absolute;
+    left: 10;
+    bottom: -35px; ///fine to put a - (negitive) number for possitioning
+    right: 50px;
+    display: flex;
+  }
+  //arrow section for direction and possitioning
+  .carousel-control-prev {
+    position: absolute;
+    bottom: -35px; ///fine to put a - (negitive) number for possitioning
+    left: 55%;
+    display: flex;
+  }
+  .carousel-indicators {
+    position: absolute;
+    /* right: 0; */
+    bottom: -55px;
+    left: 46.5%;
+    z-index: 15;
+    display: flex;
+  }
 }
 
-.carousel-control-prev {
-  background: blue;
-  position: absolute;
-  bottom: -35px;
-  left: 55%;
-  display: flex;
+//arrow section for direction and possitioning for the News section
+.news-section {
+  .carousel-control-next {
+    //background: forestgreen;
+    position: absolute;
+    left: 10;
+    bottom: -35px; ///fine to put a - (negitive) number for possitioning
+    right: 30%;
+    display: flex;
+  }
+  //arrow section for direction and possitioning
+  .carousel-control-prev {
+    //background: firebrick;
+    position: absolute;
+    bottom: -35px; ///fine to put a - (negitive) number for possitioning
+    left: 30%;
+    display: flex;
+  }
+  .carousel-indicators {
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+  }
+}
+
+//arrow section for direction and possitioning for the Calender section
+.the_calender {
+  .carousel-control-next {
+    position: absolute;
+    left: 10;
+    bottom: -35px; ///fine to put a - (negitive) number for possitioning
+    right: 30%;
+    display: flex;
+  }
+  //arrow section for direction and possitioning
+  .carousel-control-prev {
+    position: absolute;
+    bottom: -35px; ///fine to put a - (negitive) number for possitioning
+    left: 30%;
+    display: flex;
+  }
+  .carousel-indicators {
+    position: absolute;
+    color: purple;
+    /* right: 0; */
+    bottom: -55px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+  }
 }
