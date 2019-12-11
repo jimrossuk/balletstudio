@@ -1,8 +1,14 @@
 .carousel-indicators li {
+  all: unset !important;
   //styled the circles in carousel
   height: 5px;
   width: 5px;
+  display: block;
   border-radius: 50%;
+  background: green;
+  //padding: 0;
+  z-index: 10000000;
+  position: absolute;
 }
 
 //indicator possitioning
@@ -65,7 +71,10 @@
     display: flex;
   }
   .carousel-indicators {
+    //margin: 10px 0 0 0;
+    //background: gold;
     position: absolute;
+    /* right: 0; */
     bottom: -55px;
     left: 0;
     z-index: 15;
@@ -76,6 +85,7 @@
 //arrow section for direction and possitioning for the Calender section
 .the_calender {
   .carousel-control-next {
+    background: forestgreen;
     position: absolute;
     left: 10;
     bottom: -35px; ///fine to put a - (negitive) number for possitioning
@@ -84,14 +94,17 @@
   }
   //arrow section for direction and possitioning
   .carousel-control-prev {
+    background: firebrick;
     position: absolute;
     bottom: -35px; ///fine to put a - (negitive) number for possitioning
     left: 30%;
     display: flex;
   }
   .carousel-indicators {
+    background: gold;
+    list-style: purple;
     position: absolute;
-    color: purple;
+
     /* right: 0; */
     bottom: -55px;
     left: 0;
