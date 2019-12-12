@@ -2758,13 +2758,15 @@ a.footer-map-directions {
 }
 
 .carousel-indicators li {
-  all: unset !important;
-  height: 5px;
-  width: 5px;
-  display: block;
+  max-width: 10px;
+  max-height: 10px;
   border-radius: 50%;
-  background: green;
-  padding: 0;
+  list-style-type: disc;
+  background: red !important;
+  margin: 5px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  opacity: 100;
 }
 
 .carousel-control-next-icon {
@@ -2824,7 +2826,6 @@ a.footer-map-directions {
 }
 
 .the_calender .carousel-control-next {
-  background: forestgreen;
   position: absolute;
   left: 10;
   bottom: -35px;
@@ -2832,21 +2833,32 @@ a.footer-map-directions {
   display: flex;
 }
 .the_calender .carousel-control-prev {
-  background: firebrick;
   position: absolute;
   bottom: -35px;
   left: 30%;
   display: flex;
 }
 .the_calender .carousel-indicators {
-  background: gold;
-  list-style: purple;
   position: absolute;
+  color: red !important;
   /* right: 0; */
   bottom: -55px;
   left: 0;
   z-index: 15;
   display: flex;
+}
+.the_calender .carousel-control-next-icon {
+  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
+  position: absolute;
+  bottom: 0;
+  opacity: 3;
+  background: lightgray;
+}
+.the_calender .carousel-control-prev-icon {
+  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
+  position: absolute;
+  bottom: 0;
+  background: lightgray;
 }
 
 img {

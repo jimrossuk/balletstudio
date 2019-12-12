@@ -1,14 +1,15 @@
 .carousel-indicators li {
-  all: unset !important;
   //styled the circles in carousel
-  height: 5px;
-  width: 5px;
-  display: block;
+  max-width: 10px;
+  //display: block;
+  max-height: 10px;
   border-radius: 50%;
-  background: green;
-  //padding: 0;
-  z-index: 10000000;
-  position: absolute;
+  list-style-type: disc;
+  background: red !important;
+  margin: 5px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  opacity: 100;
 }
 
 //indicator possitioning
@@ -17,13 +18,17 @@
 .carousel-control-next-icon {
   background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
   position: absolute;
+  //   opacity: 100;
   bottom: 0;
+
+  //background: orchid;
 }
 //arrows for direction and possitioning
 .carousel-control-prev-icon {
   background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
   position: absolute;
   bottom: 0;
+  //background: orchid;
 }
 
 //arrow section for direction and possitioning for the Twitter section
@@ -82,10 +87,12 @@
   }
 }
 
+//              Calender    //
+
 //arrow section for direction and possitioning for the Calender section
 .the_calender {
   .carousel-control-next {
-    background: forestgreen;
+    //background: forestgreen;
     position: absolute;
     left: 10;
     bottom: -35px; ///fine to put a - (negitive) number for possitioning
@@ -94,21 +101,38 @@
   }
   //arrow section for direction and possitioning
   .carousel-control-prev {
-    background: firebrick;
+    //background: grey;
     position: absolute;
     bottom: -35px; ///fine to put a - (negitive) number for possitioning
     left: 30%;
     display: flex;
   }
   .carousel-indicators {
-    background: gold;
-    list-style: purple;
+    //background: gold;
+
     position: absolute;
+    // list-style-type: disc;
+    color: red !important;
 
     /* right: 0; */
     bottom: -55px;
     left: 0;
     z-index: 15;
     display: flex;
+  }
+  .carousel-control-next-icon {
+    background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
+    position: absolute;
+    bottom: 0;
+    opacity: 3;
+    background: lightgray;
+  }
+  //arrows for direction and possitioning
+  .carousel-control-prev-icon {
+    background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
+    position: absolute;
+    bottom: 0;
+    // opacity: 3;
+    background: lightgray;
   }
 }
