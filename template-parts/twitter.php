@@ -34,10 +34,7 @@
 </div>
 
        <?php 
-        // echo do_shortcode('[custom-twitter-feeds]')  ;
-            // fakeTweet();
-            // fakeTweet();
-            // fakeTweet();
+     
         ?> 
     </div>
 
