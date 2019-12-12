@@ -54,5 +54,35 @@ function fakeTweet(){ ?>
 
 
 
+// Function for the loop in News section ///
+function newsFunction( $query1 ){ ?>
+	<div class="news-content">
 
-?>
+	 <?php  
+		// This for loop checks for the posts
+		for ( $i = 1; $i <= 3; $i++) :
+			$query1->have_posts() {
+				 $query1->the_post()
+			}	
+	?>
+
+	<!-- output / content -->
+		<div class="news">
+			<?php the_post_thumbnail('full');?>
+			<p class="news-post-date">Posted on: <?php the_date('d/m/Y'); ?> </p>    
+			<h1 class="title">
+				<?php the_title(); ?>
+			</h1>
+			<?php the_content(); ?>        
+		</div> 
+		<!-- the output/ content -->
+		<?php
+		endfor;
+		?>
+		</div>  
+		
+		<?php
+}
+   ?>
+
+
