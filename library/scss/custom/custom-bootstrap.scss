@@ -50,7 +50,7 @@
   .carousel-indicators {
     position: absolute;
     /* right: 0; */
-    bottom: -55px;
+    bottom: -45px;
     left: 46.5%;
     z-index: 15;
     display: flex;
@@ -63,7 +63,7 @@
     //background: forestgreen;
     position: absolute;
     left: 10;
-    bottom: -35px; ///fine to put a - (negitive) number for possitioning
+    bottom: -25px; ///fine to put a - (negitive) number for possitioning
     right: 30%;
     display: flex;
   }
@@ -71,7 +71,7 @@
   .carousel-control-prev {
     //background: firebrick;
     position: absolute;
-    bottom: -35px; ///fine to put a - (negitive) number for possitioning
+    bottom: -25px; ///fine to put a - (negitive) number for possitioning
     left: 30%;
     display: flex;
   }
@@ -80,7 +80,7 @@
     //background: gold;
     position: absolute;
     /* right: 0; */
-    bottom: -55px;
+    bottom: -40px;
     left: 0;
     z-index: 15;
     display: flex;
@@ -115,7 +115,7 @@
     color: red !important;
 
     /* right: 0; */
-    bottom: -55px;
+    bottom: -50px;
     left: 0;
     z-index: 15;
     display: flex;
