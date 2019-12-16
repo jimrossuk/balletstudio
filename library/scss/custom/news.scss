@@ -2,27 +2,26 @@
   background: #f37f2c;
   padding: 40px;
   position: relative;
-  //display: flex;
 }
 
-.news-content {
+.carousel-item.make-this-flex {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
+
 .news {
-  flex: 1;
+  // flex: 1;
+  // display: flex;
+  // flex-direction: row;
+
   display: inline-block;
   background: white;
   padding: 0px;
   margin: 5px;
-  // border-radius: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
   height: 300px;
 }
-// .news:hover .news:visited {
-//   border-radius: 0px;
-// }
 
 .news p {
   padding: 10px 10px 5px 15px;
@@ -37,6 +36,12 @@
   padding: 0px 10px 5px 15px;
   margin: 0;
   font-size: 1.4rem;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
 }
 
 .news-section .title {

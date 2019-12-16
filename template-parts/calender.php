@@ -53,6 +53,8 @@ $query = new WP_Query($args);
                     //when the statement is equall   XXXX happens
                     ?>
                     </div>
+
+                    <!-- start a counter... so we only have  -->
                     <!-- This closes the div because the current date is different to previous date -->
                     <div class="date_calender test">   
                         <!--Opening a NEW DIV for events for a new date.. (Feb 17)   -->

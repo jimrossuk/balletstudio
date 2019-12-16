@@ -44,6 +44,8 @@ function create_event_cpt(){
 
     register_post_type('event', $args);
 }
+
+
 /// This is not a fake tweet. but the one to show till we have a real acct  Dont Delete
 function fakeTweet(){ ?>
 
@@ -51,6 +53,8 @@ function fakeTweet(){ ?>
 <?php   
 }
 /// This is not a fake tweet. but the one to show till we have a real acct  Dont Delete
+
+
 
 
 

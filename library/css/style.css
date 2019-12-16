@@ -2444,13 +2444,12 @@ a:visited {
   position: relative;
 }
 
-.news-content {
+.carousel-item.make-this-flex {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
 
 .news {
-  flex: 1;
   display: inline-block;
   background: white;
   padding: 0px;
@@ -2473,6 +2472,12 @@ a:visited {
   padding: 0px 10px 5px 15px;
   margin: 0;
   font-size: 1.4rem;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
 }
 
 .news-section .title {
