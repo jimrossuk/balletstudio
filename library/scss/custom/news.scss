@@ -4,15 +4,19 @@
   position: relative;
 }
 
+.make-this-flex,
 .carousel-item.make-this-flex {
   display: flex;
   flex-direction: row;
 }
-
+.news-section .carousel-item.active {
+  z-index: 10;
+  background: #f37f2c;
+}
 .news {
-  // flex: 1;
-  // display: flex;
-  // flex-direction: row;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
 
   display: inline-block;
   background: white;
@@ -61,7 +65,7 @@
   color: #642d8c;
 }
 .news:hover {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .wp-post-image {

@@ -1,7 +1,7 @@
 <?php 
  $args = [
      //What are these args???
-     'posts_per_page'=> 6, 
+     'posts_per_page'=> 5, 
      //how many posts do we want to get from CPT
      'post_type'  => 'event',
      //from the customFunction.php section.  "event"
@@ -25,7 +25,7 @@ $query = new WP_Query($args);
         <!-- made a box flex -->
         <div class="date_calender">
             <?php 
-            
+            $counter = 0;
             $previous_date = null;
             // started a variable to store a previous date so we can check if tis the same...if it is, the posts from that day, will be placed under that date
             while ($query->have_posts()):
@@ -51,6 +51,9 @@ $query = new WP_Query($args);
                     //If that statement is true, then the {} bit can then proceed.
 
                     //when the statement is equall   XXXX happens
+
+
+                    // start counter ++  here    ...
                     ?>
                     </div>
 

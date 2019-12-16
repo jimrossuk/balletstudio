@@ -1,0 +1,19 @@
+  <!-- </div> -->
+
+        <!-- <div class="carousel-inner">
+            <div class="carousel-item active">
+                <?php 
+                  //newsFunction($query); 
+                 ?>
+            </div>
+            <div class="carousel-item">
+                <?php
+                  //newsFunction($query);
+                   ?>
+             </div>
+            <div class="carousel-item">
+                 <?php
+                   //newsFunction($query);
+                    ?>
+            </div>
+        </div> -->
