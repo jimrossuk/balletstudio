@@ -20,7 +20,7 @@ $query = new WP_Query($args);
 
 <section class="the_calender">
     <h1 class="cal-1">Calendar</h1>
-    
+    <!-- copied from bootstrap -->
     <div class="calender-panel-flex"> 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -32,6 +32,8 @@ $query = new WP_Query($args);
           <!-- starts carousel-inner -->
      <div class="carousel-item active">
          <!-- starts carousel -->
+
+    <!-- copied from bootstrap -->
          <div class="flex">
         <!-- made a box flex -->
 
@@ -64,16 +66,8 @@ $query = new WP_Query($args);
 
                     //once $previous_date has a day and month stored,(after the first itertion of the loop) (Feb 14), AND the day and month have been checked from above, the statement can see if it is NOT EQUAL to $previous_date. 
                     //If that statement is true, then the {} bit can then proceed.
-
-                    //when the statement is equall   XXXX happens
-
-
-
-
                     $counter++;
                     // how many days of output is counted
-
-                    //
                     ?>
                     </div>
 
@@ -156,46 +150,7 @@ $query = new WP_Query($args);
             <!-- closing carousel -->
 
     </div> 
-        <!-- end of  calender-panel-flex -->
-
-    <!-- Carosouel  -->
-    
-    
-    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol> -->
-        <!-- <div class="carousel-inner">
-            <div class="carousel-item active">
-              
-            </div>
-            <div class="carousel-item">
-             
-            </div>
-            <div class="carousel-item">
-                
-            </div>
-        -->
-        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a> -->
-    <!-- </div> -->
-    
-
-
-
-
-
-
-
-
+        <!-- end of calender-panel-flex -->
 
     <div class="news-buttons">
         <a 
@@ -205,11 +160,6 @@ $query = new WP_Query($args);
         <!-- getting the info -->
             <?php echo get_field('calander_button')['title'];?>
         </a>
-<!--  -->
-    <!-- CANT remember how or what the "news-button Bits are from?? 
-    The [] should dot somethingn... alll confused.
-
-    -->
               
     </div>
        
