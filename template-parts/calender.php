@@ -29,19 +29,17 @@ $query = new WP_Query($args);
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
      <div class="carousel-inner">
+          <!-- starts carousel-inner -->
      <div class="carousel-item active">
+         <!-- starts carousel -->
          <div class="flex">
         <!-- made a box flex -->
 
         <div class="date_calender">
 
-
-
             <?php 
             $counter = 0;
             // counter to check if any days are to be posted
-
-
 
             $previous_date = null;
             // started a variable to store a previous date so we can check if tis the same...if it is, the posts from that day, will be placed under that date
@@ -81,7 +79,7 @@ $query = new WP_Query($args);
 
                     <!-- start a counter... so we can open the <div class="date_calender test" -->
                     <?php    
-                    if($counter % 5 ===0 ) :  ?>
+                    if($counter % 4 ===0 ) :  ?>
                     <!-- modulous to check for days to display -->
                     </div>
                     <!-- this ironicly closes the flex -->
@@ -89,17 +87,12 @@ $query = new WP_Query($args);
                     </div>
                     <!-- closing the previous carousel-item -->
                     <div class="carousel-item">
-                        <div class ="flex">    
+                        <div class ="flex"> 
+                               <!-- to display the calender flex  -->
                     
-                      <!-- DONT WANT THIS   <img class="d-block w-100" src="..." alt="First slide"> -->
-                   
-                      <!-- This ends the "date_calender test"  -->
-           
                     <?php 
                     endif;
                     ?>
-
-
                     <!-- This closes the div because the current date is different to previous date -->
                     <div class="date_calender test">   
                         <!--Opening a NEW DIV for events for a new date.. (Feb 17)   -->
