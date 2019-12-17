@@ -2544,6 +2544,14 @@ a:visited {
   background: white;
 }
 
+.carousel {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
 .calender-panel-flex {
   display: flex;
   justify-content: space-evenly;

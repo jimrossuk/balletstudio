@@ -1,7 +1,7 @@
 <?php 
  $args = [
      //What are these args???
-     'posts_per_page'=> 5, 
+     'posts_per_page'=> 520, 
      //how many posts do we want to get from CPT
      'post_type'  => 'event',
      //from the customFunction.php section.  "event"
@@ -22,10 +22,27 @@ $query = new WP_Query($args);
     <h1 class="cal-1">Calendar</h1>
     
     <div class="calender-panel-flex"> 
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+     <div class="carousel-inner">
+     <div class="carousel-item active">
+         <div class="flex">
         <!-- made a box flex -->
+
         <div class="date_calender">
+
+
+
             <?php 
             $counter = 0;
+            // counter to check if any days are to be posted
+
+
+
             $previous_date = null;
             // started a variable to store a previous date so we can check if tis the same...if it is, the posts from that day, will be placed under that date
             while ($query->have_posts()):
@@ -44,7 +61,7 @@ $query = new WP_Query($args);
                 $end_time= $end_datetime[4];
                 
                 // The if statement happens before anything is outputed to the browser
-                if ($previous_date && ($start_day.$start_month !== $previous_date)){
+                if ($previous_date && ($start_day.$start_month !== $previous_date)):
                     // When the $previous_date is checked (first time), and still null, it if statement will stop and move to line 57 or next code bit.
 
                     //once $previous_date has a day and month stored,(after the first itertion of the loop) (Feb 14), AND the day and month have been checked from above, the statement can see if it is NOT EQUAL to $previous_date. 
@@ -53,18 +70,43 @@ $query = new WP_Query($args);
                     //when the statement is equall   XXXX happens
 
 
-                    // start counter ++  here    ...
+
+
+                    $counter++;
+                    // how many days of output is counted
+
+                    //
                     ?>
                     </div>
 
-                    <!-- start a counter... so we only have  -->
+                    <!-- start a counter... so we can open the <div class="date_calender test" -->
+                    <?php    
+                    if($counter % 5 ===0 ) :  ?>
+                    <!-- modulous to check for days to display -->
+                    </div>
+                    <!-- this ironicly closes the flex -->
+
+                    </div>
+                    <!-- closing the previous carousel-item -->
+                    <div class="carousel-item">
+                        <div class ="flex">    
+                    
+                      <!-- DONT WANT THIS   <img class="d-block w-100" src="..." alt="First slide"> -->
+                   
+                      <!-- This ends the "date_calender test"  -->
+           
+                    <?php 
+                    endif;
+                    ?>
+
+
                     <!-- This closes the div because the current date is different to previous date -->
                     <div class="date_calender test">   
                         <!--Opening a NEW DIV for events for a new date.. (Feb 17)   -->
                     <?php
-                }
+                endif;
                     
-                if ($start_day.$start_month !== $previous_date){ ?>
+                if ($start_day.$start_month !== $previous_date):?>
                 <!-- if statement to check if the day eg(Feb 14 is NOT stored in $previous_date)  then echo $start-day and $start_month   
                 IF IT IS stored in $previous_date, THis code block will be skipped-->
                     <div class="datewrapper">
@@ -77,7 +119,7 @@ $query = new WP_Query($args);
                    
              </div>            
                     <?php
-                }
+                endif;
                     ?> 
                     <!-- This bit will alsways output ITS NOT IN AN IF STATEMENT-->
                     <div class="cal-mark-up">
@@ -103,28 +145,13 @@ $query = new WP_Query($args);
             <?php   wp_reset_query()    ?>
         </div>
               <!-- closing date calender  -->
-    </div> 
-        <!-- end of  calender-panel-flex -->
-
-    <!-- Carosouel  -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <!-- <img class="d-block w-100" src="..." alt="First slide"> -->
+              </div>
+              <!-- closing flex -->
             </div>
-            <div class="carousel-item">
-                <!-- <img class="d-block w-100" src="..." alt="Second slide"> -->
-            </div>
-            <div class="carousel-item">
-                <!-- <img class="d-block w-100" src="..." alt="Third slide"> -->
-            </div>
+            <!-- closing carousel-item -->
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <!-- closing carousel inner -->
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
             </a>
@@ -132,7 +159,41 @@ $query = new WP_Query($args);
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+            </div>
+            <!-- closing carousel -->
+
+    </div> 
+        <!-- end of  calender-panel-flex -->
+
+    <!-- Carosouel  -->
+    
+    
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol> -->
+        <!-- <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+            </div>
+            <div class="carousel-item">
+             
+            </div>
+            <div class="carousel-item">
+                
+            </div>
+        -->
+        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a> -->
+    <!-- </div> -->
     
 
 
