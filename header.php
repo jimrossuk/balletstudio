@@ -64,8 +64,11 @@
 					</div> -->
 					<?php ?>
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<h1 class="logo-circle ">The Ballet Company</h1>
-					
+					<div class="logo-circle">
+						<div class="logo-text">
+					<h1>The Ballet Company</h1>
+					</div>
+					</div>
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
@@ -92,13 +95,13 @@
 						<?php wp_nav_menu(array(
 						
 							'menu' =>  'Header Links',   // nav name
-							'theme_location' => 'header-links',//Its gotta go somewhere!
+							'theme_location' => 'header-links',//Its gotta go somewhere!  Where do I find these??
 							'menu_class' => 'nav socials cf',
 							)); ?>
 					</nav>
 							
 				</div>
 			
-			<p class="announcement">  <?php echo get_field('announcement') ; ?> </p>
+			
 			
 			</header>

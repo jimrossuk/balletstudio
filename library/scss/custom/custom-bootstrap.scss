@@ -1,3 +1,7 @@
+.carousel {
+  position: relative;
+}
+
 .carousel-indicators li {
   //styled the circles in carousel
   max-width: 10px;
@@ -5,31 +9,14 @@
   max-height: 10px;
   border-radius: 50%;
   list-style-type: disc;
-  background: red !important;
-  margin: 5px !important;
+  background: grey !important;
+  //margin: 5px !important;
   padding: 0 !important;
   border: 0 !important;
-  opacity: 100;
+  // opacity: 100;
 }
 
 //indicator possitioning
-
-//arrows for direction and possitioning
-.carousel-control-next-icon {
-  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
-  position: absolute;
-  //   opacity: 100;
-  bottom: 0;
-
-  //background: orchid;
-}
-//arrows for direction and possitioning
-.carousel-control-prev-icon {
-  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
-  position: absolute;
-  bottom: 0;
-  //background: orchid;
-}
 
 //arrow section for direction and possitioning for the Twitter section
 .twitter-section {
@@ -54,6 +41,20 @@
     left: 46.5%;
     z-index: 15;
     display: flex;
+  }
+  .carousel-control-next-icon {
+    background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
+    position: absolute;
+    //   opacity: 100;
+    bottom: 0;
+
+    //background: orchid;
+  }
+  //arrows for direction and possitioning
+  .carousel-control-prev-icon {
+    background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -85,6 +86,22 @@
     z-index: 15;
     display: flex;
   }
+
+  //arrows for direction and possitioning
+  .carousel-control-next-icon {
+    background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
+    position: absolute;
+    //   opacity: 100;
+    bottom: 150px;
+
+    //background: orchid;
+  }
+  //arrows for direction and possitioning
+  .carousel-control-prev-icon {
+    background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
+    position: absolute;
+    bottom: 150px;
+  }
 }
 
 //              Calender    //
@@ -92,47 +109,54 @@
 //arrow section for direction and possitioning for the Calender section
 .the_calender {
   .carousel-control-next {
-    //background: forestgreen;
+    background: forestgreen;
     position: absolute;
-    left: 10;
-    bottom: -35px; ///fine to put a - (negitive) number for possitioning
+
+    top: 80%; ///fine to put a - (negitive) number for possitioning
+    //bottom: 20%;
     right: 30%;
     display: flex;
+
+    // max-height: -10rem;
   }
   //arrow section for direction and possitioning
   .carousel-control-prev {
-    //background: grey;
+    background: forestgreen;
     position: absolute;
-    bottom: -35px; ///fine to put a - (negitive) number for possitioning
+    top: 80%; ///fine to put a - (negitive) number for possitioning
+    //bottom: 20%;
     left: 30%;
     display: flex;
+
+    // max-height: -10rem;
   }
   .carousel-indicators {
-    //background: gold;
-
     position: absolute;
-    // list-style-type: disc;
-    color: red !important;
-
-    /* right: 0; */
-    bottom: -50px;
-    left: 0;
-    z-index: 15;
-    display: flex;
+    list-style-type: disc;
+    bottom: -22%;
   }
   .carousel-control-next-icon {
+    background: rgb(145, 137, 137);
     background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
     position: absolute;
-    bottom: 0;
-    opacity: 3;
-    background: lightgray;
+
+    border-radius: 50%;
+    //bottom: -3.2rem; ///fine to put a - (negitive) number for possitioning
+    left: 30%;
+    display: flex;
+    &:hover {
+      background: purple;
+    }
   }
   //arrows for direction and possitioning
   .carousel-control-prev-icon {
+    background: rgb(145, 137, 137);
     background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
     position: absolute;
-    bottom: 0;
-    // opacity: 3;
-    background: lightgray;
+    border-radius: 50%;
+
+    &:hover {
+      background: purple;
+    }
   }
 }

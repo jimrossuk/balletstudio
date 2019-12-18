@@ -2542,10 +2542,12 @@ a:visited {
 .the_calender {
   padding: 100px;
   background: white;
+  position: relative;
 }
 
-.carousel {
+.the_calender .carousel {
   width: 100%;
+  min-height: 20rem;
 }
 
 .flex {
@@ -2670,7 +2672,22 @@ a:hover {
   border-radius: 25px;
 }
 
-.welcome-button {
+.calender-button {
+  background: firebrick;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 4%;
+  left: 45%;
+}
+
+.the_calender .news-buttons {
+  font-size: 0.9em;
+  color: white;
+  text-align: center;
+}
+.the_calender .welcome-button {
   margin: 100px 10px 0px 0;
   background: #ec418f;
   border: 0px;
@@ -2679,8 +2696,7 @@ a:hover {
   font-size: 0.5em;
   padding: 15px 40px;
 }
-
-a.footer-map-directions {
+.the_calender a.footer-map-directions {
   font-size: 0.9em;
   display: inline-block;
   padding: 15px 40px;
@@ -2696,6 +2712,7 @@ a.footer-map-directions {
 .header {
   background: white;
   padding: 0px;
+  top: 10px;
 }
 
 .top-nav li a {
@@ -2707,7 +2724,7 @@ a.footer-map-directions {
 .cf,
 .comment-respond {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   font-size: 0.7rem;
@@ -2715,11 +2732,24 @@ a.footer-map-directions {
 
 .logo-circle {
   background: #ed4290;
-  border-radius: 50%/50%;
-  width: 150px;
-  height: 150px;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  display: block;
+  position: relative;
+}
+
+.logo-text h1 {
+  position: absolute;
+  padding: 0;
+  margin: 0;
   text-align: center;
   align-items: center;
+  display: block;
+  color: white;
+  width: 7.7rem;
+  left: 12%;
+  top: 8%;
 }
 
 .socials li {
@@ -2779,28 +2809,18 @@ a.footer-map-directions {
   padding-left: 90px;
 }
 
+.carousel {
+  position: relative;
+}
+
 .carousel-indicators li {
   max-width: 10px;
   max-height: 10px;
   border-radius: 50%;
   list-style-type: disc;
-  background: red !important;
-  margin: 5px !important;
+  background: grey !important;
   padding: 0 !important;
   border: 0 !important;
-  opacity: 100;
-}
-
-.carousel-control-next-icon {
-  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
-  position: absolute;
-  bottom: 0;
-}
-
-.carousel-control-prev-icon {
-  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
-  position: absolute;
-  bottom: 0;
 }
 
 .twitter-section .carousel-control-next {
@@ -2824,6 +2844,16 @@ a.footer-map-directions {
   z-index: 15;
   display: flex;
 }
+.twitter-section .carousel-control-next-icon {
+  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
+  position: absolute;
+  bottom: 0;
+}
+.twitter-section .carousel-control-prev-icon {
+  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
+  position: absolute;
+  bottom: 0;
+}
 
 .news-section .carousel-control-next {
   position: absolute;
@@ -2846,41 +2876,55 @@ a.footer-map-directions {
   z-index: 15;
   display: flex;
 }
+.news-section .carousel-control-next-icon {
+  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
+  position: absolute;
+  bottom: 150px;
+}
+.news-section .carousel-control-prev-icon {
+  background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
+  position: absolute;
+  bottom: 150px;
+}
 
 .the_calender .carousel-control-next {
+  background: forestgreen;
   position: absolute;
-  left: 10;
-  bottom: -35px;
+  top: 80%;
   right: 30%;
   display: flex;
 }
 .the_calender .carousel-control-prev {
+  background: forestgreen;
   position: absolute;
-  bottom: -35px;
+  top: 80%;
   left: 30%;
   display: flex;
 }
 .the_calender .carousel-indicators {
   position: absolute;
-  color: red !important;
-  /* right: 0; */
-  bottom: -50px;
-  left: 0;
-  z-index: 15;
-  display: flex;
+  list-style-type: disc;
+  bottom: -22%;
 }
 .the_calender .carousel-control-next-icon {
+  background: #918989;
   background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-right.png);
   position: absolute;
-  bottom: 0;
-  opacity: 3;
-  background: lightgray;
+  border-radius: 50%;
+  left: 30%;
+  display: flex;
+}
+.the_calender .carousel-control-next-icon:hover {
+  background: purple;
 }
 .the_calender .carousel-control-prev-icon {
+  background: #918989;
   background-image: url(/wp-content/themes/theme-bones-master/library/images/carousel-left.png);
   position: absolute;
-  bottom: 0;
-  background: lightgray;
+  border-radius: 50%;
+}
+.the_calender .carousel-control-prev-icon:hover {
+  background: purple;
 }
 
 img {

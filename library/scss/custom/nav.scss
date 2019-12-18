@@ -1,6 +1,7 @@
 .header {
   background: white;
   padding: 0px;
+  top: 10px;
 }
 
 // #logo a {
@@ -16,38 +17,35 @@
 .top-nav,
 .cf {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   font-size: 0.7rem;
   //color: red;
 }
 
-// .wrap h1 {
-//   height: 150px;
-//   width: 150px;
-//   display: table-cell;
-//   text-align: center;
-//   // vertical-align: center;
-//   padding: 5%;
-//   border-radius: 50%;
-//   margin: 0;
-//   background: #ed4290;
-// }
 .logo-circle {
   background: #ed4290;
-  border-radius: 50%/50%;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  align-items: center;
-  //vertical-align: middle;
-  //position: relative;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  display: block;
+  position: relative;
 }
 
-// .logo-circle h1 {
-//   position: absolute;
-// }
+.logo-text h1 {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  display: block;
+  color: white;
+  width: 7.7rem;
+  left: 12%;
+  top: 8%;
+}
+
 .socials li {
   //can I pass an array here????
   background: greenyellow;

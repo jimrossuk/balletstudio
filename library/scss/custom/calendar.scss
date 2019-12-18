@@ -1,11 +1,14 @@
 .the_calender {
   padding: 100px;
   background: white;
-  //position: relative;
+  position: relative;
 }
-
-.carousel {
-  width: 100%;
+.the_calender {
+  .carousel {
+    width: 100%;
+    // position: relative;
+    min-height: 20rem;
+  }
 }
 .flex {
   display: flex;
@@ -15,6 +18,7 @@
 .calender-panel-flex {
   display: flex;
   justify-content: space-evenly;
+  // position: relative;
 }
 
 .cal-1 {

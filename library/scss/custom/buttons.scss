@@ -28,24 +28,41 @@ a:hover {
   border-radius: 25px;
 }
 
-.welcome-button {
-  margin: 100px 10px 0px 0;
-  background: #ec418f;
-  border: 0px;
-  border-radius: 20px;
-  color: white;
-  font-size: 0.5em;
-  padding: 15px 40px;
+.calender-button {
+  background: firebrick;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 4%;
+  left: 45%;
 }
-a.footer-map-directions {
-  font-size: 0.9em;
-  display: inline-block;
-  padding: 15px 40px;
-  color: white;
-  text-align: center;
-  border: 0px;
-  border-radius: 20px;
-  margin-top: 10px;
-  font-size: 0.5em;
-  background: grey;
+.the_calender {
+  .news-buttons {
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+  }
+
+  .welcome-button {
+    margin: 100px 10px 0px 0;
+    background: #ec418f;
+    border: 0px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.5em;
+    padding: 15px 40px;
+  }
+  a.footer-map-directions {
+    font-size: 0.9em;
+    display: inline-block;
+    padding: 15px 40px;
+    color: white;
+    text-align: center;
+    border: 0px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 0.5em;
+    background: grey;
+  }
 }
