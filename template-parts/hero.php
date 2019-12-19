@@ -1,5 +1,6 @@
 <section class ="hero-section">
     
+<p class="announcement">  <?php echo get_field('announcement') ; ?> </p>
 <img src ="<?php
 echo get_field('hero_photo');
 ?>"> 

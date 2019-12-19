@@ -66,7 +66,7 @@
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<div class="logo-circle">
 						<div class="logo-text">
-					<h1>The Ballet Company</h1>
+					<h2>The Ballet Company</h2>
 					</div>
 					</div>
 					<?php // if you'd like to use the site description you can un-comment it below ?>
@@ -95,13 +95,10 @@
 						<?php wp_nav_menu(array(
 						
 							'menu' =>  'Header Links',   // nav name
-							'theme_location' => 'header-links',//Its gotta go somewhere!  Where do I find these??
+							'theme_location' => 'header-links',//Its gotta go somewhere!  Where do I find these?? above and below
 							'menu_class' => 'nav socials cf',
 							)); ?>
+							<?php get_field("instagram");?>
 					</nav>
 							
 				</div>
-			
-			
-			
-			</header>

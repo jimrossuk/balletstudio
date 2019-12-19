@@ -68,8 +68,8 @@
 
 						</main>
 
-					<?php get_sidebar(); ?>
-
+					<?php  ?>
+								<!-- took out get_sidebar(); in line above -->
 				</div>
 
 			</div>

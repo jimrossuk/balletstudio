@@ -2431,11 +2431,23 @@ a:visited {
 .hero-section {
   position: relative;
   color: chartreuse;
+  margin-top: -35px;
 }
 
 .hero-section-text h2 {
   position: absolute;
   color: blue;
+}
+
+.announcement {
+  background: #ed4290;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
 }
 
 .news-section {
@@ -2712,7 +2724,7 @@ a:hover {
 .header {
   background: white;
   padding: 0px;
-  top: 10px;
+  margin-top: -35px;
 }
 
 .top-nav li a {
@@ -2739,7 +2751,7 @@ a:hover {
   position: relative;
 }
 
-.logo-text h1 {
+.logo-text h2 {
   position: absolute;
   padding: 0;
   margin: 0;
@@ -2749,24 +2761,17 @@ a:hover {
   color: white;
   width: 7.7rem;
   left: 12%;
-  top: 8%;
+  top: 30%;
 }
 
-.socials li {
-  background: greenyellow;
+.socials li a {
+  background: #ed4290;
+  background-image: url(/wp-content/themes/theme-bones-master/theme-bones-master/images/twitter.png);
 }
 
 .nav {
   display: block;
   padding: 0;
-}
-
-.announcement {
-  background: #ed4290;
-  padding: 0;
-  margin: 0;
-  color: white;
-  text-align: center;
 }
 
 .footer {
@@ -2925,6 +2930,82 @@ a:hover {
 }
 .the_calender .carousel-control-prev-icon:hover {
   background: purple;
+}
+
+.cal-page-section {
+  padding: 10%;
+}
+
+.cal-page-area {
+  display: flex;
+  padding: 3%;
+  position: relative;
+  border: 2px solid plum;
+  margin: 2px;
+  justify-content: start;
+}
+
+.cal-headline {
+  text-align: center;
+  color: #ed4290;
+  font-size: 3.2rem;
+}
+
+.full-date-cal-page {
+  display: flex;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  width: 15rem;
+}
+.full-date-cal-page h1 {
+  font-size: 3rem;
+}
+.full-date-cal-page h4 {
+  font-size: 2rem;
+}
+
+.date-cal {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.month-cal {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: block;
+}
+
+.time-cal {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  text-align: left;
+}
+
+.details-cal {
+  padding: 2px;
+  margin: 0;
+  justify-items: flex-end;
+}
+.details-cal p {
+  color: red;
+}
+
+.flex-cal {
+  display: flex;
+  justify-content: start;
+}
+
+.title-cal {
+  background: #ed4290;
+  border-radius: 50px;
+  padding: 20px;
+  justify-content: center;
+  color: white;
 }
 
 img {
