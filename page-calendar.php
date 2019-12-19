@@ -50,6 +50,7 @@ while($query->have_posts()):
                 <h4 class ="month-cal"> 
                     <?php echo $start_month ; ?> 
                 </h4>
+                <div class="purple-blob"></div>
             </div>
             <!-- full-date-cal-page end -->
             
@@ -63,6 +64,7 @@ while($query->have_posts()):
                 <div class="flex-cal">
                     <div class ="details-cal">
                     <div class ="time-cal">
+                        
                 <?php
 
                 ?> <h2 class="title-cal"> <?php the_title(); ?> </h2> <?php

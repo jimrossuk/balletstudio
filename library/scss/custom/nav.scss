@@ -47,10 +47,37 @@
   top: 30%;
 }
 
-.socials li a {
-  //can I pass an array here????
-  background: #ed4290;
-  background-image: url(/wp-content/themes/theme-bones-master/theme-bones-master/images/twitter.png);
+.socials .twitter {
+  background: #ed4290 no-repeat;
+  display: block;
+  border-radius: 100%;
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  margin: 0;
+  background-image: url(/wp-content/themes/theme-bones-master/library/images/twitter.png);
+  a {
+    color: transparent;
+    &:hover {
+      display: none;
+    }
+  }
+}
+
+.socials .instagram {
+  background: #ed4290 no-repeat;
+  border-radius: 100%;
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  margin: 0;
+  background-image: url(/wp-content/themes/theme-bones-master/library/images/instagram.png);
+  a {
+    color: transparent;
+    &:hover {
+      display: none;
+    }
+  }
 }
 
 .nav {

@@ -1,0 +1,32 @@
+.news-section-page {
+  background: white;
+  margin: 18px;
+}
+
+.news-content-page {
+  background: #f37f2c;
+  padding: 5%;
+}
+
+.title-news-page {
+  text-align: center;
+  color: #642d8c;
+}
+
+.news-page {
+  background: white;
+  padding: 5%;
+  & p {
+    text-align: center;
+  }
+}
+
+.news-headline {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #642d8c;
+  margin-top: -35px;
+  //   background: red;
+  z-index: 200;
+  //border: 0;
+}

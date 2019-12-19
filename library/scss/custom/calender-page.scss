@@ -22,6 +22,7 @@
   text-align: center;
   padding: 10px;
   width: 15rem;
+  color: rgb(157, 78, 134);
 
   & h1 {
     font-size: 3rem;
@@ -46,9 +47,10 @@
 }
 
 .time-cal {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   opacity: 0.8;
   text-align: left;
+  color: red;
 }
 
 .details-cal {
@@ -57,7 +59,7 @@
   margin: 0;
   justify-items: flex-end;
   & p {
-    color: red;
+    color: rgb(61, 122, 148);
   }
 }
 
@@ -73,4 +75,12 @@
   padding: 20px;
   justify-content: center;
   color: white;
+}
+
+.purple-blob {
+  width: 24px;
+  height: 24px;
+  background: purple;
+  border-radius: 50%;
+  display: inline-block;
 }
