@@ -248,4 +248,11 @@ require_once( 'custom-functions.php' );
 // We inserted this line ^ so we can change some functions.
 
 
+
+if( function_exists('acf_add_options_page') ) {
+  acf_add_options_page('Footer');
+
+}
+add_action('acf/init', 'acf_add_options_page');
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>

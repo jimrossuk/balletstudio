@@ -2685,7 +2685,7 @@ a:hover {
 }
 
 .calender-button {
-  background: firebrick;
+  background: #642d8c;
   padding: 10px 20px;
   font-size: 0.9rem;
   border-radius: 50px;
@@ -2921,14 +2921,12 @@ a:hover {
 }
 
 .the_calender .carousel-control-next {
-  background: forestgreen;
   position: absolute;
   top: 80%;
   right: 30%;
   display: flex;
 }
 .the_calender .carousel-control-prev {
-  background: forestgreen;
   position: absolute;
   top: 80%;
   left: 30%;
@@ -3075,6 +3073,19 @@ a:hover {
   color: #642d8c;
   margin-top: -35px;
   z-index: 200;
+}
+
+.hentry {
+  border: solid 2px #ec418f;
+}
+
+h1.page-title {
+  text-align: center;
+  color: #ec418f;
+}
+
+.hentry .page .post-137 .status-publish .type-page {
+  background: chartreuse;
 }
 
 img {
