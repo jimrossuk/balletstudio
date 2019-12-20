@@ -2922,14 +2922,14 @@ a:hover {
 
 .the_calender .carousel-control-next {
   position: absolute;
-  top: 80%;
-  right: 30%;
+  top: 63%;
+  right: 35%;
   display: flex;
 }
 .the_calender .carousel-control-prev {
   position: absolute;
-  top: 80%;
-  left: 30%;
+  top: 63%;
+  left: 37%;
   display: flex;
 }
 .the_calender .carousel-indicators {
