@@ -8,8 +8,9 @@
 				<p> Address: <?php echo get_field('address','options') ; ?> </p>
 				<a  class="" href="tel:07814343602"> T: <?php echo get_field('phone_number','options') ; ?> </a>
 				<p> Email: <?php echo get_field('email_us','options') ; ?> </p>
-				
-				<h4><a href="">@Twitter</a> </h4>
+
+				<h3><a href="<?php	echo get_field('get_directions','options')['url']; ?>"> </a>
+				</h3>
 				
 			</div>	
 							<!--Middle bit  -->

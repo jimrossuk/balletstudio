@@ -2436,7 +2436,6 @@ a:visited {
 
 .hero-section-text h2 {
   position: absolute;
-  color: blue;
 }
 
 .announcement {
@@ -3082,10 +3081,6 @@ a:hover {
 h1.page-title {
   text-align: center;
   color: #ec418f;
-}
-
-.hentry .page .post-137 .status-publish .type-page {
-  background: chartreuse;
 }
 
 img {
